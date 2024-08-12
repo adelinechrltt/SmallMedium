@@ -1,0 +1,274 @@
+/* miscellaneous */
+hr {
+    margin: 0px;
+    height: 3px;
+    opacity: .8;
+}
+
+/* navbar styling */
+#navbar {
+    /* background-color:skyblue; */
+}
+
+.nav-item .nav-link {
+    color:rgb(201, 93, 215);
+}
+
+.nav-item .nav-link:hover {
+    color: rgb(41, 39, 43);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-item .active {
+    /* use text shadow so it does not change text width when pages are changed*/
+    text-shadow: 0px 0px 1px rgb(41, 39, 43);
+    color:rgb(41, 39, 43);
+}
+
+.nav-item button {
+    text-shadow: 0px 0px 1px white;
+    color: white;
+    background-color: rgb(111, 36, 132);
+    border-color: rgb(111, 36, 132);
+    border-radius: 15px;
+}
+
+.nav-item button:hover {
+    text-shadow: 0px 0px 1px rgb(111, 36, 132);
+    color: rgb(111, 36, 132);
+    background-color: rgb(206, 195, 207);
+    border-color: rgb(206, 195, 207);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.8s;
+}
+
+.nav-item .btn-success:active {
+    text-shadow: 0px 0px 1px rgb(111, 36, 132);
+    color: rgb(111, 36, 132);
+    background-color: rgb(206, 195, 207);
+    border-color: rgb(206, 195, 207);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.8s;
+}
+
+/* carousel styling */
+#carousel-section {
+    background-color:rgb(201, 93, 215);
+}
+
+#carousel h1 {
+    font-weight: 400;
+    line-height: 0.9em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    color:rgb(62, 11, 76)
+}
+
+#carousel-left {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+}
+
+#carousel-left a{
+    color: rgb(111, 36, 132);
+}
+
+#carousel-left-btn button{
+    margin-left: 0.7em;
+    margin-bottom: 0.6em;
+    max-width: 25%;
+    text-shadow: 0px 0px 1px white;
+    color: white;
+    background-color: rgb(111, 36, 132);
+    border-color: rgb(111, 36, 132);
+}
+
+#carousel-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: -20px;
+}
+
+#carousel-right img{
+    max-width: 33m;
+    max-height: 19em;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#wave {
+    margin-top: -200px;
+}
+
+@media screen and (max-width: 1000px){
+    #carousel-right {
+        display: none;
+    }
+    #carousel-left {
+        padding-right: 4em;
+    }
+    #carousel-left-btn {
+        width: 30em;
+    }
+    #wave {
+        margin: 0;
+        margin-top: -5em;
+    }
+    
+}
+
+/* trending section */
+
+#trending .container {
+    margin-bottom: 4em;
+}
+
+.trending-contents-single {
+    background-color: rgb(245, 238, 247);
+    padding: 1em;
+    margin: 1em 0em;
+
+    border-radius: 10px;
+    border: 5px white solid;
+}
+
+.trending-contents-single .numerator {
+    color: rgb(120, 12, 132);
+    opacity: 0.25;
+}
+
+.trending-contents-single .description {
+    padding-top: 0.5em;
+}
+
+.trending-contents-single .description .desc-head {
+    padding: 0;
+}
+
+.trending-contents-single #title {
+    font-size: 1.2em;
+}
+
+.trending-contents-single p {
+    margin: 0;
+}
+
+.trending-contents-single a {
+    color: rgb(162, 9, 179);
+}
+
+@media screen and (max-width: 1000px){
+    #trending-title {
+        margin-top: 20px;
+        margin-bottom: -13px;
+    }
+}
+
+/* multi-section */
+#multi-section .container-fluid {
+    background-color: #f2f6f8;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+#multi-section .card img {
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1000px){
+    #multi-section .container-fluid {
+        padding-left: 1em;
+        padding-right: 0;
+        padding: 1em 2em;
+    }
+
+    #multi-section .card {
+        padding: 0;
+    }
+}
+
+
+/* article */
+
+.card-body img {
+    margin-right: 0.2em;
+}
+
+
+/* discover-section */
+#discover-topics-section {
+    padding: 1em;
+}
+
+#topic-badges button {
+    margin: 0.5em 0;
+    border-radius: 15px;
+    border-color: rgb(120, 12, 132);
+    color: rgb(120, 12, 132);
+}
+
+#topic-badges button:hover {
+    background-color: rgb(120, 12, 132);
+    color: #FFF;
+    font-size: 200;
+}
+
+#see-all-topics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#see-all-topics a {
+    color:rgb(173, 55, 223);
+    font-weight: 600;
+}
+
+
+/* subscription */
+
+#discover-subscription{
+    margin-top: -1.2em;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+#discover-text {
+    margin-bottom: -10px;
+}
+
+#discover-text h5{
+    margin-bottom: 0.1em;
+}
+
+#discover-form {
+    padding: 0;
+}
+
+#discover-form form, #discover-form .col-auto {
+    margin-top: 0px;
+}
+
+#discover-form button {
+    color: white;
+    background-color:rgb(120, 12, 132);
+}
+
+#discover-and-footer-section hr {
+    margin-bottom: 5px;
+    margin-top: 2px;
+    height: 6px;
+}
+
+#discover-footer {
+    display: flex;
+    align-items: center;
+}
+
+#created-by {
+   margin-top: 1em;
+   font-weight: 100;
+}
