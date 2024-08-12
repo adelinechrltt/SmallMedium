@@ -5,6 +5,10 @@ hr {
     opacity: .8;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* navbar styling */
 #navbar {
     /* background-color:skyblue; */
@@ -255,6 +259,7 @@ hr {
 #discover-form button {
     color: white;
     background-color:rgb(120, 12, 132);
+    border-color: rgb(120, 12, 132);
 }
 
 #discover-and-footer-section hr {
